@@ -1,6 +1,6 @@
 body {
     font-family: 'DM Sans', sans-serif;
-    font-size: 14px;
+    font-size: 16px;
     letter-spacing: 1px;
 }
 
@@ -31,11 +31,9 @@ body {
 
 #navigation {
     background-color: #2E2E2E;
-    padding: 20px 10px;
+    padding: 20px;
     z-index: 100;
     width: 100%;
-    padding-right: 30px;
-    padding-left: 30px;
 }
 
 .fixedNav #navigation {
@@ -64,7 +62,7 @@ body {
 }
 
 #navbarNav li {
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 /*Jumbotron*/
@@ -78,28 +76,29 @@ body {
 }
 
 .jumbotron .container .lead a {
-    box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
-    padding: 1rem 2rem;
+    padding: 16px 32px;
+}
+
+.jumbotron .container .lead a,
+.signup-section .form-inline input,
+.signup-section .container .row .form-inline button {
+    box-shadow: 0 30px 30px 0 rgba(0, 0, 0, 0.1) !important;
     height: auto;
-    font-size: 14px;
+    font-size: 0.75rem;
     text-transform: uppercase;
-    letter-spacing: 0.15rem;
+    letter-spacing: 2px;
     border: 0;
 }
 
 .jumbotron img {
-    max-width: 620px;
-    max-height: 428px;
+    width: 300px;
 }
 
 /*Main content part 1*/
 
 .heading {
     background-color: #2E2E2E;
-    padding-left: 60px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-right: 60px;
+    padding: 10px 60px;
 }
 
 .heading h2 {
@@ -116,9 +115,7 @@ body {
 .section-2 .container #cards,
 .section-3 .container #cards,
 .section-4 .container #cards {
-    padding-bottom: 60px;
-    padding-top: 60px;
-    padding-left: 20px;
+    padding: 60px 0 60px 20px;
     margin: auto
 }
 
@@ -136,7 +133,7 @@ body {
 }
 
 .text p {
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 /*Main content part 2*/
@@ -146,14 +143,11 @@ body {
     display: flex;
     flex-wrap: nowrap;
     overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-    -ms-overflow-style: -ms-autohiding-scrollbar;
 }
 
 .carousel-multi-item .controls-top {
     text-align: center;
-    margin-bottom: 1.88rem;
-    margin-top: 30px;
+    margin: 30px 0;
 }
 
 .carousel-multi-item .controls-top .btn-floating {
@@ -176,7 +170,7 @@ body {
 }
 
 .carousel-multi-item {
-    margin-bottom: 5rem;
+    margin-bottom: 80px;
 }
 
 .carousel-inner {
@@ -186,14 +180,15 @@ body {
 }
 
 .carousel-inner #item img {
-    max-width: 222.396;
-    max-height: 354.177;
+    width: 220px;
+    margin: 0 auto;
+    padding: 40px 0;
 }
 
 .carousel-inner #item .card-body {
     box-sizing: border-box;
-    max-width: 278;
-    max-height: 616.906;
+    max-width: 278px;
+    max-height: 616.906px;
     background-color: #E4E4E4;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 2px 6px 0 rgba(0, 0, 0, 0.19)
 }
@@ -201,9 +196,9 @@ body {
 .carousel-inner #item a {
     padding: 10px 16px;
     height: auto;
-    font-size: 12px;
+    font-size: 0.75rem;
     text-transform: uppercase;
-    letter-spacing: 0.15rem;
+    letter-spacing: 2px;
     background-color: #343a40;
 }
 
@@ -218,7 +213,7 @@ body {
 /*Signup and footer*/
 
 .signup-section {
-    padding: 10rem 0;
+    padding: 160px 0;
     background: linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 0%, rgba(22, 22, 22, 0.5) 75%, #161616 100%), url("../photos/vinoth-ragunathan-ze.jpg");
     background-position: center;
     background-repeat: no-repeat;
@@ -228,19 +223,13 @@ body {
 
 .signup-section .form-inline input,
 .signup-section .container .row .form-inline button {
-    box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
-    padding: 1.25rem 2rem;
-    height: auto;
-    font-size: 12px;
-    text-transform: uppercase;
-    letter-spacing: 0.15rem;
-    border: 0;
+    padding: 20px 32px;
 }
 
 .site-footer {
     background-color: #26272b;
     padding: 45px 0 20px;
-    font-size: 15px;
+    font-size: 1rem;
     line-height: 24px;
     color: #737373;
 }
@@ -256,7 +245,7 @@ body {
 
 .site-footer h6 {
     color: #fff;
-    font-size: 16px;
+    font-size: 1rem;
     text-transform: uppercase;
     margin-top: 5px;
     letter-spacing: 2px
@@ -303,31 +292,13 @@ body {
     width: 40px;
     height: 40px;
     line-height: 40px;
-    margin-left: 6px;
-    margin-right: 0;
+    margin: 0 0 0 6px;
     border-radius: 100%;
     background-color: #33353d
 }
 
 .copyright-text {
     margin: 0
-}
-
-@media (max-width:991px) {
-    .site-footer [class^=col-] {
-        margin-bottom: 30px
-    }
-}
-
-@media (max-width:767px) {
-    .site-footer {
-        padding-bottom: 0
-    }
-
-    .site-footer .copyright-text,
-    .site-footer .social-icons {
-        text-align: center
-    }
 }
 
 .social-icons {
@@ -346,13 +317,13 @@ body {
     text-transform: uppercase;
     color: #96a2b2;
     font-weight: 700;
-    font-size: 13px
+    font-size: 0.8rem;
 }
 
 .social-icons a {
     background-color: #eceeef;
     color: #818a91;
-    font-size: 16px;
+    font-size: 1rem;
     display: inline-block;
     line-height: 44px;
     width: 44px;
@@ -360,8 +331,6 @@ body {
     text-align: center;
     margin-right: 8px;
     border-radius: 100%;
-    -webkit-transition: all .2s linear;
-    -o-transition: all .2s linear;
     transition: all .2s linear
 }
 
@@ -375,7 +344,7 @@ body {
     line-height: 34px;
     height: 34px;
     width: 34px;
-    font-size: 14px
+    font-size: 0.9rem;
 }
 
 .social-icons a.facebook:hover {
@@ -393,6 +362,23 @@ body {
 .social-icons a.youtube:hover {
     background-color: #CC0000;
 }
+
+
+@media (max-width:630px) {
+    .section-5 {
+        display: none;
+    }
+
+    .jumbo {
+        width: 320px;
+    }
+
+
+    .section-2 .row {
+        flex-direction: column;
+    }
+}
+
 
 @media (max-width:767px) {
     .social-icons li.title {
@@ -419,19 +405,32 @@ body {
     .section-4 .container #cards .text h4 {
         padding-bottom: 40px;
     }
-}
 
-    @media (max-width:630px) {
+    .jumbotron .container .lead {
+        padding: 30px 0;
+    }
+
+    .jumbotron {
+        margin-bottom: 0;
+    }
+
     .section-5 {
         display: none;
     }
 
-    .jumbo {
-        width: 320px;
+    .site-footer {
+        padding-bottom: 0
     }
 
-    .section-2 .row {
-        flex-direction: column;
+    .site-footer .copyright-text,
+    .site-footer .social-icons {
+        text-align: center
     }
+}
 
+   
+    @media (max-width:991px) {
+        .site-footer [class^=col-] {
+            margin-bottom: 30px
+        }
 }
