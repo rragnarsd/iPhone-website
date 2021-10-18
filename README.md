@@ -18,5 +18,8 @@ I built this site with HTML, CSS and a little bit of Javascript.<br>
 <br>
 ![Smartphone website](https://user-images.githubusercontent.com/44742460/118313908-f0c54200-b4e2-11eb-8d2f-9e33c2988523.png)
 
+# Screenshot
+![iphone](https://user-images.githubusercontent.com/44742460/137785918-5a7927cf-72e4-43d4-b173-a5e4df4f0dba.png)
+
 <strong>Here is a live version of the site! https://rragnarsd.github.io/iPhone-website/</strong><br>
 
